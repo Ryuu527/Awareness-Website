@@ -1,0 +1,555 @@
+html {
+    scroll-behavior: smooth;
+   }
+
+
+body{
+    background-color: rgb(22, 23, 30);
+    margin: 0;
+    color: white;
+}
+
+
+.bubble{
+    margin:0;
+    background:transparent;
+    color: white;
+    font-size: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:800;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.5em 1em;
+    position:relative;
+    border-radius: 0 0.25em 0.25em 0.25em;
+    box-shadow: 6px 10px 20px white;
+    transition: 0.5s;
+    animation: speech 0.7s linear 1;
+    text-shadow: 6px 4px 4px black;
+}
+
+.bubble::after{
+    content:'' ;
+    position: absolute;
+    border: 0.5em solid transparent;
+    border-top-color: rgb(150, 150, 150);
+    border-right-color: rgb(143, 143, 143);
+    right:100%;
+    top:0%;
+    transform: skewY(20deg);
+    transform-origin:100% 100%;
+}
+
+@keyframes speech{
+
+    0%{ top: -20px;}
+    25%{top: 5px; box-shadow: 7px 40px 40px white;}
+    50%{top: 20px;}
+    75%{top:-20px;box-shadow: 7px -10px 50px white;}
+    100%{ top: 0;}
+}
+
+.top-container{
+    
+    height: 100vh;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+        url('https://streetbounty.com/wp-content/uploads/2017/11/Nout-Gons.jpeg');
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.top-container2{
+    background-image: url("https://images.unsplash.com/photo-1579165466991-467135ad3110?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 250px;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 8px 4px 6px red, 10px 4px 6px black;
+    padding-top: 50px ;
+
+}
+.top-container3{
+    background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    height: 100vh;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.top-container h1{
+    color: rgb(255, 0, 0);
+    font-size:  50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 16;
+    
+}
+.top-container a{
+        
+    display: inline-block;
+    text-decoration: none ;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+    
+}
+
+.top-container a:hover{
+    border: 1px solid #f5473b;
+    background:#f5473b;
+    transition: 1s;
+}
+
+
+.top-container2 h1{
+    color: white;
+    font-size:  50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 16;
+}
+
+.top-container3 h1{
+    color: white;
+    font-size:  70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 16;
+}
+
+
+.top-container2 h1 p{
+    color:red;
+    text-shadow: 5px 1px 3px white, 10px 4px 6px black;
+    letter-spacing: 9px;
+    font-size: 65px;
+}
+
+
+
+/* Page 2 styling */
+.p2{
+    padding:200px 0 250px ;
+    background-color: rgb(30, 30, 30);
+}
+.p2 .p2-content{
+    display: flex;
+    font-family: sans-serif;
+    font-size:20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+}
+
+.p2 .p2-content .left{
+    width: 45%;
+    
+}
+
+.p2 .p2-content .left p{
+    text-align: center;
+    padding-left: 1px;
+}
+.p2 .p2-content .left img{ 
+    height: 200px;
+    font-weight: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+    padding-left: 50px;
+
+  }
+
+.p2 .p2-content .right{
+    width: 55%;
+}
+
+.p2 .p2-content .right .text{ 
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding-right: 100px;
+  }
+
+.p2 .p2-content .right a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: red;
+    border: none;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 30px;
+    resize: none;
+    background-size: 30%;
+}
+
+.p2 .p2-content .right a:hover{
+border: 1px solid #f5473b;
+    background:#f5473b;
+    transition: 1s;
+    color: white;
+}
+
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0, .3);
+    transition:0.4s;
+    font-size: 20px;
+    z-index: 100;
+}
+
+
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin:0 20px;
+    color:white;
+    font-family:cursive;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color:red;
+}
+
+.navbar.active{
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar.active ul li a{
+    color: rgb(0, 0, 0);
+}
+.navbar.active ul li a:hover{
+    color: rgb(255, 0, 0);
+}
+  
+
+
+.contact{
+    flex:3;
+    margin-left: 3rem;
+    padding: 90px;}
+
+.contact .input-control{
+        margin: 1.5rem 0;
+
+    }
+.contact .input-control{
+        display: flex;}
+        
+        last-child{
+            margin: 1.5rem;
+        }
+    
+.contact .input-control input, .contact .input-control textarea{
+        border-radius: 30px;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        padding: 0.8rem 1.1rem;
+        outline: none;
+        border: none;
+        background-color:rgb(207, 207, 207);
+        width: 100%;
+        color: rgb(0, 0, 0);
+        resize: none;
+    }
+
+.contact .btn {
+    display: inline-block;
+    text-decoration: none ;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 30px;
+    font-size: 20px;
+    background: transparent;
+    position:relative;
+    cursor: pointer;
+    }
+
+.contact .btn:hover{
+        border:  solid #f5473b;
+        background:#f5473b;
+        transition: 1s;
+    }
+  
+.content{
+    padding:100px 0 250px;
+}
+.content h1{
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top:50px;
+    font-size: 40px;
+}
+
+.content p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    text-align:center;
+}
+
+.content-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.flip-card {
+    max-width: 250px; 
+    max-height:400px;
+    width: 300px;
+    height: 400px;
+    padding: 5px 160px 15px 200px;
+    display: inline-block;
+    overflow: auto;
+    border-radius: 70px;
+    overflow-x:hidden;
+  }
+.flip-card2{
+    padding: 5px 160px 15px 150px;
+    max-width: 250px; 
+    max-height:400px;
+    width: 300px;
+    height: 400px;
+    padding: 5px 160px 15px 20px;
+    display: inline-block;
+    overflow: auto;
+    border-radius: 70px;
+    overflow-x:hidden;
+}
+  
+.flip-card3{
+    padding: 5px 160px 15px 150px;
+    max-width: 250px; 
+    max-height:400px;
+    width: 300px;
+    height: 400px;
+    padding: 5px 160px 15px 20px;
+    display: inline-block;
+    overflow: auto;
+    border-radius: 70px;
+    overflow-x:hidden;
+}
+  
+  .flip-card-inner {
+    position: relative;
+    border-radius: 70px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 70px;
+  }
+  .flip-card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 70px;
+  }
+  .flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 70px;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    border-radius: 70px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front, .flip-card-back2 {
+    position: absolute;
+    border-radius: 70px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-front, .flip-card-back3 {
+    position: absolute;
+    border-radius: 70px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  
+  .flip-card-front {
+    background-color: rgb(23, 84, 84);
+    background-size:500px 500px;
+    border-radius: 70px;
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 16;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 7px 4px 6px black;
+    box-shadow: 6px 6px 6px 0 black;
+    
+}
+  
+  
+  .flip-card-back {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a6/Parts_of_an_Electronic_cigarette.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    transform: rotateY(180deg);
+    font-size: 12px;
+    border-radius: 70px;
+    display: flex;
+    background-color: rgb(59, 65, 73);
+    
+  }
+  .flip-card-back2 {
+    background-image: url('https://i1.wp.com/www.tourismfocus.co.zw/wp-content/uploads/2022/10/e-cigarettes.jpg?fit=630%2C380&ssl=1');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    transform: rotateY(180deg);
+    font-size: 12px;
+    border-radius: 70px;
+    display: flex;
+    background-color: rgb(59, 65, 73);
+  }
+  .flip-card-back3 {
+    background-image: url('https://www.cdc.gov/tobacco/basic_information/e-cigarettes/images/e-cigarette-aerosol-can-contain-harmful-ingredients-desktop-700.jpg?_=45193');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    transform: rotateY(180deg);
+    font-size: 12px;
+    border-radius: 70px;
+    display: flex;
+    background-color: rgb(59, 65, 73);
+  }
+
+  .flip-card-back h1{
+    font-size: 22px;
+    margin-top:  9rem;
+    padding: 3rem 0;
+  }
+
+  .flip-card-back2 h1{
+    font-size: 22px;
+    margin-top:  9rem;
+    padding: 3rem 0;
+  }
+  .flip-card-back3 h1{
+    font-size: 21px;
+    margin-top:  3rem;
+    padding: 4.5rem 0;
+  }
+
+.video{
+    position:relative;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.video iframe{
+
+width: 700px;
+height: 400px;}
+
+
+.fact{
+    padding:100px 0px 150px ;
+    display: flex;
+    font-family: sans-serif;
+    font-size:25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+    
+}
+
+.fact .left-f{
+    width: 30%;
+    font-weight: bold;
+    padding-left: 80px;
+    padding-bottom: 100px;
+}
+
+.fact .left-f p{
+    text-align: right;
+    color: red;
+}
+.fact .right-f img{ 
+    height: 500px;
+    width: 700px;
+    object-fit:fill;
+    border-radius: 20px;
+  }
+
+.fact .right-f{
+    width: 60%;
+    font-size: 35px;
+    color: red;
+    text-align: center;
+    font-weight: bold;    
+    text-shadow: 3px 3px 4px rgb(89, 89, 89);
+}
+
+
+.p3-c{
+    height: 250px;
+    font-size: 30px;
+    text-align: center;
+    padding: 62px ;
+}
+
+.p3-c p{
+    font-size: 40px;
+    color: yellow;
+}
